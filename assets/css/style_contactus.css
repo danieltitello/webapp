@@ -1,0 +1,272 @@
+* {
+	font-family:Arial;
+}
+body {
+	margin:0;
+	padding:0;
+}
+header {
+	display:flex;
+	justify-content:center;
+	height:120px;
+}
+.container {
+	display:flex;
+	justify-content:space-between;/*gives space to logo and menu  */
+	width:990px;
+
+}
+.logo {
+	display:flex;
+	align-items:center;
+
+
+}
+img{
+	width: 200px;
+}
+.menu {
+	display:flex;
+	align-items:center;/*vertical*/
+}
+nav ul,
+nav li {/*without dots and space*/
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+nav ul {
+	display:flex;/*menu side by side*/
+}
+nav a {/*editing each item of the menu*/
+	display:block;
+	padding:15px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#727272;
+}
+nav .active a,
+nav a:hover {
+	background-color:#39aae1;
+	color:#FFFFFF;
+}
+
+#geral {
+	display:flex;
+	justify-content:center;
+}
+
+.contact {/*column align, one below other*/
+	flex-direction: column;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+
+}
+
+
+.widget_title {
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.widget_title_text {
+	color:#000000;
+	font-size:21px;
+	font-weight: bold;
+}
+.widget_title_bar {
+	width:50px;
+	height:2px;
+	background-color:#36a9e1;
+	margin-top:10px;
+}
+.flex {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+
+
+footer {
+	background-color:#1e1e1e;
+	display:flex;
+	justify-content:center;
+}
+
+
+.footer_area {
+	display:flex;
+	margin-top: 10px;
+}
+.footer_areaitem {
+	flex:1;
+	color:#FFFFFF;
+}
+.flexColumn {
+	flex-direction:column;
+	margin-left: 10px;
+}
+
+footer .widget_title_text {
+	color:#FFFFFF;
+}
+
+
+.footer_copy {
+	border-top:1px solid #2c2c2c;
+	height:40px;
+	line-height:40px;
+	color:#5c5c5c;
+	font-size:12px;
+	margin-top:30px;
+}
+
+.menuMobile {
+	display:none;
+	width:40px;
+	height:40px;
+	margin-top:40px;
+	margin-bottom:40px;
+	margin-right:20px;
+}
+
+.mm_line {
+	height:3px;
+	background-color:#39aae1;
+}
+
+@media (max-width:600px) {
+
+	.banner_headline {
+		padding:20px;
+	}
+	.banner_headline h1 {
+		font-size:55px;
+	}
+	.banner_headline h2 {
+		font-size:17px;
+	}
+
+	.banner_options {
+		height:auto;
+		flex-direction:column;
+	}
+
+	.container {
+		flex-direction:column;
+	}
+
+	#geral section{
+		padding:20px;
+	}
+	
+	
+	.widget{
+		margin-left:35px;
+		margin-right: 15px;
+
+	}
+
+	.footer_menu {
+		flex-direction:column;
+	}
+	.footer_area {
+		flex-direction: column;
+		padding:20px;
+	}
+
+	.footer_copy {
+		padding-left:20px;
+	}
+
+	header .container {
+		flex-direction: row;
+	}
+
+	nav ul {
+		flex-direction: column;
+		display:none;
+		position: absolute;
+	    left: 0;
+	    width: 100%;
+	    background-color: #FFFFFF;
+	}
+
+	header {
+		height:auto;
+	}
+	.logo {
+		padding-left:20px;
+	}
+
+	.menuMobile {
+		display:flex;
+		flex-direction: column;
+		justify-content:space-around;
+	}
+}
+
+
+
+@media (max-width: 1000px){
+	.container{
+		margin-left: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
